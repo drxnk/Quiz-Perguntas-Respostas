@@ -102,6 +102,6 @@ enviarBtn.addEventListener("click", () => {
   if (quizAtual < quizBase.length) {
     loadQuiz();
   } else {
-    quiz.innerHTML = `<h2>Você acertou ${score}/${quizBase.length} perguntas!</h2>`;
+    quiz.innerHTML = `<h2>Você acertou ${score}/${quizBase.length} perguntas!</h2> <button onclick="location.reload()">Finalizar</button>`;
   }
 });
